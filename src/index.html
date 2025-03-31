@@ -11,13 +11,20 @@
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <form class="form" id="search-form" autocomplete="off">
+        <div class="search-container">
+          <input type="text" name="search" id="search" placeholder="Search images..." />
+          <button type="submit">Search</button>
+        </div>
+      </form>
+      <span class="loader">Loading...</span>
+      <ul class="gallery"></ul>
     </main>
 
     <load src="./partials/footer.html" />
 
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/render-functions.js"></script>
+    <script type="module" src="./js/pixabay-api.js"></script>
   </body>
 </html>
