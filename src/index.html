@@ -9,7 +9,7 @@
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
- 
+
     <main>
       <form class="form" id="search-form" autocomplete="off">
         <div class="search-container">
@@ -17,8 +17,13 @@
           <button type="submit">Search</button>
         </div>
       </form>
-      <span class="loader">Loading...</span>
+
       <ul class="gallery"></ul>
+
+      <div class="load-more-container">
+        <button class="load-more" style="display: none;">Load more</button>
+        <span class="loader" style="display: none;">Loading...</span>
+      </div>
     </main>
 
     <load src="./partials/footer.html" />
